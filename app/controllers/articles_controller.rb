@@ -42,7 +42,7 @@ class ArticlesController < ApplicationController
   def update
     respond_to do |format|
       if @article.update(article_params)
-        format.html { redirect_to @article, notice: 'Article was successfully updated.' }
+        format.html { redirect_to @article, notice: 'Artigo atualizado com sucesso.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
