@@ -5,8 +5,10 @@
     = notice
 
 h1 = @article.title
-
 p = @article.summary
+p
+  strong = @article.category.try :name
+
 hr
 p = simple_format @article.body
 

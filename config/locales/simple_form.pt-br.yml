@@ -19,6 +19,8 @@ pt-BR:
         title: Título
         body: Texto
         summary: Reumo
+      category: Categoria
+
     # hints:
     #   defaults:
     #     password: 'Mínimo de 8 caracteres.'
