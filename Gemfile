@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'slim-rails', '~> 2.0.1'
 gem 'simple_form', '~> 3.0.0.rc'
 gem 'uploadbox', '~> 0.0.4'
+gem 'devise', '~> 3.0.0'
 
 group :development do
   gem 'kickoff_rails', '~> 0.0.6'
@@ -38,3 +39,5 @@ group :development do
   gem 'binding_of_caller', '~> 0.7.1'
   gem 'xray-rails',        '~> 0.1.6'
 end
+
+
