@@ -9,6 +9,8 @@ p = @article.summary
 p
   strong = @article.category.try :name
 
+= img @article.picture.regular if @article.picture?
+
 hr
 p = simple_format @article.body
 
