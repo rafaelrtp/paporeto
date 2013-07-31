@@ -7,7 +7,7 @@ html
     = csrf_meta_tags
 
   body
-    .navbar.navbar-inverse
+    .navbar.navbar-inverse.navbar-static-top
       .navbar-inner
         = link_to 'Paporeto', root_path, class: 'brand'
 
@@ -17,6 +17,8 @@ html
               = link_to 'Artigos', articles_path
             li class="#{'active' if params[:controller] == 'categories'}"
               = link_to 'Categorias', categories_path
+            li class="#{'active' if params[:controller] == 'users'}"
+              = link_to 'Usuários', users_path
 
           ul.nav.pull-right
             li
