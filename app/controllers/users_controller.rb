@@ -47,7 +47,12 @@ class UsersController < ApplicationController
     end
 
     respond_to do |format|
+
       if @user.update(user_params)
+        if current_user == @user
+          sign_in(@user, bypass: true)
+        end
+
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
         format.json { head :no_content }
       else

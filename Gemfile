@@ -27,11 +27,23 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-# Gems adicionadas durante o curso
+# GEMS ADICIONADAS DURANTE O CURSO
+
+#slim
 gem 'slim-rails', '~> 2.0.1'
+
+#form
 gem 'simple_form', '~> 3.0.0.rc'
+
+#uploader
 gem 'uploadbox', '~> 0.0.4'
+
+#login
 gem 'devise', '~> 3.0.0'
+
+#pagination
+gem 'kaminari', '~> 0.14.1'
+gem 'bootstrap-kaminari-views', '~> 0.0.2'
 
 group :development do
   gem 'kickoff_rails', '~> 0.0.6'
